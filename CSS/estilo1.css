@@ -1,0 +1,40 @@
+contenedor
+{
+    background-color: rgb(91, 51, 128);
+    padding:10px;
+    font-size: 23px;
+    text-align: center;
+    display:grid;
+    /**como estoy en padre grid template**/
+    grid-gap:10px;
+    /**grid-template-columns: 150px 50px 100px;
+    grid-template-rows: 100px 100px 50px 100px;
+    grid-template-columns: 30% 30% 20%;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: repeat(8, 1fr)100px;**/
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    grid-template-rows: 1fr 2f 3fr 1fr 1fr;
+}
+.contenedor>div
+{
+    background-color: rgb(190, 156, 223);
+}
+.contenedor .hijo1
+{
+    background-color: aqua;
+    grid-column: 1/3;
+    grid-row: 1/4;
+    
+}
+.contenedor .hijo2
+{
+    background-color: blue;
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+.contenedor .hijo3
+{
+    background-color: rgb(202, 167, 167);
+}
